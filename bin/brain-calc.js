@@ -13,7 +13,7 @@ const randomSign = () => {
 let count = 0;
 const calcGame = () => {
   console.log('What is the result of the expression?');
-  while (count <= 3) {
+  while (count < 4) {
     let correctAns;
     const firstNum = randomNumber();
     const secondNum = randomNumber();
@@ -26,7 +26,7 @@ const calcGame = () => {
         correctAns = firstNum - secondNum;
         break;
       case ':':
-        correctAns = firstNum / secondNum;
+        correctAns = Math.floor(firstNum / secondNum);
         break;
       case '*':
         correctAns = firstNum * secondNum;
@@ -34,13 +34,17 @@ const calcGame = () => {
     }
     console.log(`Question ${firstNum} ${randomSigns} ${secondNum}`);
     const answer = readlineSync.question('Answer: ');
-    if (answer === correctAns) {
+    if (Number(answer) === correctAns) {
       console.log('Correct!');
       count++;
+      console.log(count)
     } else {
       console.log(`'${answer}' is wrong answer ;(. Correct answer was '${correctAns}'. 
 Let's try again, ${name}!`);
       return;
+    }
+    if(count === 3){
+        console.log(`Congratulations, ${name}!`)
     }
   }
 };

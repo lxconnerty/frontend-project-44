@@ -13,7 +13,7 @@ const evenGame = () => {
     console.log(`Question: ${randomNumber()}`);
     const correctAns = check(randomNumber()) ? 'yes' : 'no';
     const answer = readlineSync.question('Answer: ');
-    if (answer === correctAns) {
+    if (Number(answer) === correctAns) {
       console.log('Correct!');
       count++;
     } else {
