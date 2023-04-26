@@ -4,11 +4,11 @@ import {randomNumber} from '../utils.js';
 const ruleMessage = 'What is the result of the expression?';
 
 const getRandomSign = () => {
-    return Math.floor(Math.random() * 4)
+    return Math.floor(Math.random())
 }
 
 const getSigns = () => {
-  const signs = ['+', '-', '*', ':'];
+  const signs = ['+', '-', '*'];
   return signs[getRandomSign()];
 };
 
@@ -19,9 +19,6 @@ const calculate = (firstNum, operator, secondNum) => {
 
         case '-':
         return  firstNum - secondNum;
-
-        case ':':
-        return  Math.floor(firstNum / secondNum);
 
         case '*':
         return firstNum * secondNum;
