@@ -7,9 +7,9 @@ const ruleMessage = 'Answer "yes" if the number is even, otherwise answer "no".'
 const check = (num) => (num % 2 === 0);
 
 const evenGame = () => {
-  const question = randomNumber(100);
-  const correctAnswer = check(question) ? 'yes' : 'no';
-  return [question, correctAnswer];
+  const question = randomNumber();
+  const correctAns = check(question) ? 'yes' : 'no';
+  return [question, correctAns];
 };
 
 const playEven = () => createGame(evenGame, ruleMessage);

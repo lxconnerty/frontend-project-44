@@ -8,14 +8,14 @@ const createGame = (roundOfGame, ruleMessage) => {
     const roundsCount = 3;
 
     for (let i = 0; i < roundsCount; i += 1) {
-    const [question, correctAnswer] = roundOfGame();
+    const [question, correctAns] = roundOfGame();
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
 
-    if (userAnswer === correctAnswer) {
+    if (userAnswer === correctAns) {
         console.log('Correct!');
     } else {
-        console.log(`'${userAnswer}' is wrong answer ;( correct answer was '${correctAnswer}'
+        console.log(`'${userAnswer}' is wrong answer ;( correct answer was '${correctAns}'
 Let's try again, ${name}!`);
         return;
     }
