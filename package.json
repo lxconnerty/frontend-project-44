@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "description": "[![Actions Status](https://github.com/lxconnerty/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/lxconnerty/frontend-project-44/actions)",
   "bin": {
+    "brain-calc": "bin/brain-calc.js",
     "brain-games": "bin/brain-games.js",
     "brain-even": "bin/brain-even.js"
   },
