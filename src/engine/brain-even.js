@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import createGame from '../index.js';
-import randomNumber from '../utils.js';
+import {randomNumber} from '../utils.js';
 
 const ruleMessage = 'Answer "yes" if the number is even, otherwise answer "no".';
 
