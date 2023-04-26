@@ -3,7 +3,7 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/d30e363d21b0264a73f8/maintainability)](https://codeclimate.com/github/lxconnerty/frontend-project-44/maintainability)
 
-Brain games is 5 terminal games!
+Brain games is 5 games in your terminal
 
 
 System requirements:
