@@ -24,21 +24,21 @@
 Game start commands:
 
 
-    ⋅⋅*brain-games
+    1. brain-games
     
     
-    ⋅⋅*brain-calc
+    2. brain-calc
     
     
-    ⋅⋅*brain-even
+    3. brain-even
     
     
-    ⋅⋅*brain-gcd
+    4. brain-gcd
     
     
-    ⋅⋅*brain-progression
+    5. brain-progression
     
     
-    ⋅⋅*brain-prime
+    6. brain-prime
 
 
