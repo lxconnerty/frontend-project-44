@@ -1,5 +1,5 @@
 import createGame from '../index.js';
-import {customizableRandomNumber} from '../utils.js';
+import { customizableRandomNumber } from '../utils.js';
 
 const ruleMessage = 'What number is missing in the progression?';
 

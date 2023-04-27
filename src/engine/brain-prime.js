@@ -1,5 +1,5 @@
 import createGame from '../index.js';
-import {customizableRandomNumber} from '../utils.js';
+import { customizableRandomNumber } from '../utils.js';
 
 const ruleMessage = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
