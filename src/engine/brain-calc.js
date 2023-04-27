@@ -1,16 +1,16 @@
 import createGame from '../index.js';
-import { randomNumber } from '../utils.js';
+import { randomNumber, customizableRandomNumber } from '../utils.js';
 
 const ruleMessage = 'What is the result of the expression?';
 
-const getRandomSign = () => Math.floor(Math.random());
+// const getRandomSign = () => Math.floor(Math.random() * 3);
 
 const getSigns = () => {
   const signs = ['+', '-', '*'];
-  return signs[getRandomSign()];
+  return signs[customizableRandomNumber(3)];
 };
 
-const calculate = (firstNum, operator, secondNum) => {
+function calculate(firstNum, operator, secondNum) {
   switch (operator) {
     case '+':
       return firstNum + secondNum;
@@ -23,7 +23,8 @@ const calculate = (firstNum, operator, secondNum) => {
     default:
       console.log('failed');
   }
-};
+  return operator;
+}
 
 const calcGame = () => {
   const firstNum = randomNumber();
