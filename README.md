@@ -4,9 +4,9 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/d30e363d21b0264a73f8/maintainability)](https://codeclimate.com/github/lxconnerty/frontend-project-44/maintainability)
 
 # Brain games is 5 games in your terminal
-/br
-System requirements: /br
-    /tb Node.js 16+ version
+
+System requirements:
+    Node.js 16+ version
 
 
 How start:
