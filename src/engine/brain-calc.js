@@ -20,6 +20,8 @@ const calculate = (firstNum, operator, secondNum) => {
 
     case '*':
       return firstNum * secondNum;
+    default:
+      console.log('failed');
   }
 };
 
