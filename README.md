@@ -20,5 +20,8 @@ Game start commands:
     1. brain-games
     2. brain-calc
     3. brain-even
+    4. brain-gcd
+    5. brain-progression
+    6. brain-prime
 
 
