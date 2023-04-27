@@ -5,11 +5,11 @@
 
 # Brain games is 5 games in your terminal
 
-##System requirements:
+## System requirements:
     Node.js 16+ version
 
 
-##How start:
+## How start:
 
 
     1. git clone https://github.com/lxconnerty/frontend-project-44
@@ -21,7 +21,7 @@
     3. games start in terminal
 
 
-Game start commands:
+## Game start commands:
 
 
     1. brain-games
