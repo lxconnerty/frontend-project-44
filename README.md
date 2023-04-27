@@ -10,8 +10,14 @@ System requirements:
 
 
 How start:
+
+
     1. git clone https://github.com/lxconnerty/frontend-project-44
+    
+    
     2. in the repository folder run the command "make install" and npm link
+    
+    
     3. games start in terminal
 
 
