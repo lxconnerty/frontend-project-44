@@ -1,26 +1,18 @@
 install:
-		npm ci
-
-lint:
-		npx eslint .
-
-publish:
-		npm publish --dry-run
-
+	npm ci
+eslint:
+	npx eslint --no-eslintrc --config .eslintrc.yml .
 brain-games:
-		node bin/brain-games.js
-
-brain-even:
-		node bin/brain-even.js
-
+	node bin/brain-games.js
 brain-calc:
-		node bin/brain-calc.js
-
+	node bin/brain-calc.js
+brain-even:
+	node bin/brain-even.js
 brain-gcd:
-		node bin/brain-gcd.js
-
-brain-progression:
-		node bin/brain-progression.js
-
+	node bin/brain-gcd.js
 brain-prime:
-		node bin/brain-prime.js
+	node bin/brain-prime.js
+brain-progression:
+	node bin/brain-progression.js
+publish:
+	npm publish --dry-run
