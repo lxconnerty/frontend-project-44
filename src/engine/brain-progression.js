@@ -17,16 +17,16 @@ const getProgressionQuestion = (start, incr, total, blank) => {
   return progression.join(' ');
 };
 
-const roundOfProgression = () => {
+const progressionGame = () => {
   const start = customizableRandomNumber(100);
   const incr = customizableRandomNumber(18) + 2;
   const total = 10;
   const blank = customizableRandomNumber(total - 1);
   const question = getProgressionQuestion(start, incr, total, blank);
-  const correctAnswer = getProgressionMember(start, incr, blank);
-  return [question, `${correctAnswer}`];
+  const correctAns = getProgressionMember(start, incr, blank);
+  return [question, `${correctAns}`];
 };
 
-const playProgression = () => createGame(roundOfProgression, ruleMessage);
+const playProgression = () => createGame(progressionGame, ruleMessage);
 
 export default playProgression;

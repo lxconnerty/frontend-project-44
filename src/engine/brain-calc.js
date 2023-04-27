@@ -23,7 +23,7 @@ const calculate = (firstNum, operator, secondNum) => {
   }
 };
 
-const roundOfCalc = () => {
+const calcGame = () => {
   const firstNum = randomNumber();
   const secondNum = randomNumber();
   const randomSigns = getSigns();
@@ -31,6 +31,6 @@ const roundOfCalc = () => {
   return [`${firstNum} ${randomSigns} ${secondNum}`, `${correctAns}`];
 };
 
-const playCalc = () => createGame(roundOfCalc, ruleMessage);
+const playCalc = () => createGame(calcGame, ruleMessage);
 
 export default playCalc;

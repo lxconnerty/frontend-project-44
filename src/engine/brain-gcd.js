@@ -14,13 +14,13 @@ const getGCD = (num1, num2) => {
   return gcd;
 };
 
-const roundOfGCD = () => {
+const gcdGame = () => {
   const firstNum = randomNumber() + 1;
   const secondNum = randomNumber() + 1;
-  const correctAnswer = getGCD(firstNum, secondNum);
-  return [`${firstNum} ${secondNum}`, `${correctAnswer}`];
+  const correctAns = getGCD(firstNum, secondNum);
+  return [`${firstNum} ${secondNum}`, `${correctAns}`];
 };
 
-const playGCD = () => createGame(roundOfGCD, ruleMessage);
+const playGCD = () => createGame(gcdGame, ruleMessage);
 
 export default playGCD;
